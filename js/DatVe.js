@@ -197,7 +197,7 @@ $(document).ready(function () {
     if (
       $("#hoten").hasClass("is-valid") &&
       $("#email").hasClass("is-valid") &&
-      $("#sdt").hasClass("is-valid") 
+      $("#sdt").hasClass("is-valid")
     ) {
       $("#datve").removeAttr("disabled");
     } else {
@@ -206,7 +206,7 @@ $(document).ready(function () {
   });
   $("#email").on("input", function (e) {
     var email = $("#email").val();
-    var checkemail = /[A-Za-z0-9]+@gmail\.com$/;
+    var checkemail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (checkemail.test(email) && email != "") {
       $("#email").addClass("is-valid").removeClass("is-invalid");
       $("#erroremail").text("");
@@ -226,7 +226,7 @@ $(document).ready(function () {
   });
   $("#sdt").on("input", function (e) {
     var sdt = $("#sdt").val();
-    var checksdt = /^0[0-9]{9}/;
+    var checksdt = /^(09|03|08)\d{8}$/;
     if (checksdt.test(sdt) && sdt != "") {
       $("#sdt").addClass("is-valid").removeClass("is-invalid");
       $("#errorsdt").text("");
