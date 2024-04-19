@@ -194,15 +194,8 @@ $(document).ready(function () {
       $("#hoten").addClass("is-invalid").removeClass("is-valid");
       $("#errorhoten").text("Họ và tên bắt đầu bằng ký tự chữ hoa");
     }
-    if (
-      $("#hoten").hasClass("is-valid") &&
-      $("#email").hasClass("is-valid") &&
-      $("#sdt").hasClass("is-valid")
-    ) {
-      $("#datve").removeAttr("disabled");
-    } else {
-      $("#datve").prop("disabled", true);
-    }
+        $("#datve").prop("disabled",false)
+
   });
   $("#email").on("input", function (e) {
     var email = $("#email").val();
@@ -214,15 +207,8 @@ $(document).ready(function () {
       $("#email").addClass("is-invalid").removeClass("is-valid");
       $("#erroremail").text("Email phải đúng định dạng");
     }
-    if (
-      $("#hoten").hasClass("is-valid") &&
-      $("#email").hasClass("is-valid") &&
-      $("#sdt").hasClass("is-valid")
-    ) {
-      $("#datve").removeAttr("disabled");
-    } else {
-      $("#datve").prop("disabled", true);
-    }
+    $("#datve").prop("disabled",false)
+
   });
   $("#sdt").on("input", function (e) {
     var sdt = $("#sdt").val();
@@ -234,15 +220,7 @@ $(document).ready(function () {
       $("#sdt").addClass("is-invalid").removeClass("is-valid");
       $("#errorsdt").text("Số điện thoại phải đúng định dạng");
     }
-    if (
-      $("#hoten").hasClass("is-valid") &&
-      $("#email").hasClass("is-valid") &&
-      $("#sdt").hasClass("is-valid")
-    ) {
-      $("#datve").removeAttr("disabled");
-    } else {
-      $("#datve").prop("disabled", true);
-    }
+    $("#datve").prop("disabled",false)
   });
   $("#datve").click(function () {
     $("#datghe").addClass("d-none");
