@@ -194,21 +194,35 @@ $(document).ready(function () {
       $("#hoten").addClass("is-invalid").removeClass("is-valid");
       $("#errorhoten").text("Họ và tên bắt đầu bằng ký tự chữ hoa");
     }
-        $("#datve").prop("disabled",false)
-
+    if (
+      $("#hoten").hasClass("is-valid") &&
+      $("#mail").hasClass("is-valid") &&
+      $("#sdt").hasClass("is-valid")
+    ) {
+      $("#datve").removeAttr("disabled");
+    } else {
+      $("#datve").prop("disabled", true);
+    }
   });
-  $("#email").on("input", function (e) {
-    var email = $("#email").val();
+  $("#mail").on("input", function (e) {
+    var email = $("#mail").val();
     var checkemail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (checkemail.test(email) && email != "") {
-      $("#email").addClass("is-valid").removeClass("is-invalid");
+      $("#mail").addClass("is-valid").removeClass("is-invalid");
       $("#erroremail").text("");
     } else {
-      $("#email").addClass("is-invalid").removeClass("is-valid");
+      $("#mail").addClass("is-invalid").removeClass("is-valid");
       $("#erroremail").text("Email phải đúng định dạng");
     }
-    $("#datve").prop("disabled",false)
-
+    if (
+      $("#hoten").hasClass("is-valid") &&
+      $("#mail").hasClass("is-valid") &&
+      $("#sdt").hasClass("is-valid")
+    ) {
+      $("#datve").removeAttr("disabled");
+    } else {
+      $("#datve").prop("disabled", true);
+    }
   });
   $("#sdt").on("input", function (e) {
     var sdt = $("#sdt").val();
@@ -220,7 +234,15 @@ $(document).ready(function () {
       $("#sdt").addClass("is-invalid").removeClass("is-valid");
       $("#errorsdt").text("Số điện thoại phải đúng định dạng");
     }
-    $("#datve").prop("disabled",false)
+    if (
+      $("#hoten").hasClass("is-valid") &&
+      $("#mail").hasClass("is-valid") &&
+      $("#sdt").hasClass("is-valid")
+    ) {
+      $("#datve").removeAttr("disabled");
+    } else {
+      $("#datve").prop("disabled", true);
+    }
   });
   $("#datve").click(function () {
     $("#datghe").addClass("d-none");
@@ -228,7 +250,7 @@ $(document).ready(function () {
     $("#tt_thoigian").html($("#film_time").html());
     $("#tt_ghechon").html(listTenGhe.join(", "));
     $("#tt_hoten").html($("#hoten").val());
-    $("#tt_email").html($("#email").val());
+    $("#tt_email").html($("#mail").val());
     $("#tt_sdt").html($("#sdt").val());
 
     $("#tt_tongtien").html(GiaGhe + combo + "  đ");
@@ -298,7 +320,7 @@ $(document).ready(function () {
       $("#ttv_thoigian").html($("#film_time").html());
       $("#ttv_ghechon").html(listTenGhe.join(", "));
       $("#ttv_hoten").html($("#hoten").val());
-      $("#ttv_email").html($("#email").val());
+      $("#ttv_email").html($("#mail").val());
       $("#ttv_sdt").html($("#sdt").val());
       $("#ttv_combo").html($("#tt_combo").html());
       $("#ttv_tongtien").html(GiaGhe + combo + "  đ");
