@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="./css/Home.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <script src="./js/bootstrap.bundle.min.js"></script>
-  <script src="./js/test.js"></script>
   <script src="./js/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -48,7 +47,7 @@
           </div>
           <div class="row mt-5 TH2D-nav mb-1">
             <div class="col-1 mt-1 p-0">
-              <a class="logo-home  m-0" href="./index.html"></a>
+              <a class="logo-home m-0" href="./index.html"></a>
             </div>
             <div
               class="col-11 p-1 rounded-5"
@@ -58,7 +57,7 @@
                 class="nav menu-nav rounded-5 flex-nowrap"
                 style="background-color: #d8047c; height: 50px"
               >
-                <li class="nav-item rounded-start-5 text-nowrap">
+                <li class="nav-item rounded-start-5 text-nowrap" style="background-color: orange;">
                   <a
                     href="./PhimDangChieu.html"
                     class="nav-link rounded-start-5"
@@ -223,71 +222,74 @@
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
           <div class="modal-content modal-bg" id="noscroll">
               <div class="modal-body">
+                <div class="d-flex justify-content-end">
+                  <button class="btn btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
                   <form class="form" id="register_form">
                       <div class="form-title w-100 h-auto text-center">
-                          <h2 class="fw-bold text-uppercase">đăng kí tài khoản</h2> 
+                          <h2 class="fw-bold text-uppercase text-white">đăng kí tài khoản</h2> 
                       </div>
                       <div class="group mt-3 mb-2 text-center">
                           <div class="fit">
-                              <label for="name">Họ và tên:</label> 
+                              <label  for="name" class="text-white">Họ và tên:</label> 
                               <span class="text-danger">*</span> <br>
-                              <input id="name" class="txt" type="text" placeholder="hãy nhập họ và tên của bạn"> <br>
+                              <input id="name" class="inp" type="text" placeholder="hãy nhập họ và tên của bạn"> <br>
                               <span class="text-danger" id="errName"></span>
                           </div>
                       </div>
                       <div class="group mt-3 mb-2 text-center">
                           <div class="fit">
-                              <label for="birthdate">Ngày sinh:</label> 
+                              <label for="birthdate" class="text-white">Ngày sinh:</label> 
                               <span class="text-danger">*</span> <br>
-                              <input id="birthdate" class="txt" type="date"> <br>
+                              <input id="birthdate" class="inp" type="date"> <br>
                               <span class="text-danger" id="errBirthdate"></span>
                           </div>
                       </div>
                       <div class="group mt-3 mb-2 text-center">
                           <div class="fit">
-                              <label for="phone">Số điện thoại:</label> 
+                              <label for="phone" class="text-white">Số điện thoại:</label> 
                               <span class="text-danger">*</span> <br>
-                              <input id="phone" class="txt" type="text" placeholder="Nhập số điện thoại của bạn"> <br>
+                              <input id="phone" class="inp" type="text" placeholder="Nhập số điện thoại của bạn"> <br>
                               <span class="text-danger" id="errPhone"></span>
                           </div>
                       </div>
                       <div class="group mt-3 mb-2 text-center">
                           <div class="fit">
-                              <label for="cc">Nhập CCCD/CMND:</label> 
+                              <label for="cc" class="text-white">Nhập CCCD/CMND:</label> 
                               <span class="text-danger">*</span> <br>
-                              <input id="cc" class="txt" type="text" placeholder="Nhập CCCD/CMND của bạn"> <br>
+                              <input id="cc" class="inp" type="text" placeholder="Nhập CCCD/CMND của bạn"> <br>
                               <span class="text-danger" id="errCc"></span>
                           </div>
                       </div>
                       <div class="group mt-3 mb-2 text-center">
                           <div class="fit">
-                              <label for="mail"> Nhập email:</label> 
+                              <label for="mail" class="text-white"> Nhập email:</label> 
                               <span class="text-danger">*</span> <br>
-                              <input id="email" class="txt" type="text" placeholder="Nhập email của bạn"> <br>
+                              <input id="email" class="inp" type="text" placeholder="Nhập email của bạn"> <br>
                               <span class="text-danger" id="errMail"></span> 
                           </div>
                       </div>
                       <div class="group mt-3 mb-2 text-center">
                           <div class="fit">
-                              <label for="username">Tên đăng nhập:</label> 
+                              <label for="username" class="text-white">Tên đăng nhập:</label> 
                               <span class="text-danger">*</span> <br>
-                              <input id="username" class="txt" type="text" placeholder="Nhập Tên đăng nhập mà bạn muốn"> <br>
+                              <input id="username" class="inp" type="text" placeholder="Nhập Tên đăng nhập mà bạn muốn"> <br>
                               <span class="text-danger" id="errUsername"></span> 
                           </div>
                       </div>
                       <div class="group mt-3 mb-2 text-center">
                           <div class="fit">
-                              <label for="password">Nhập mật khẩu: </label> 
+                              <label for="password" class="text-white">Nhập mật khẩu: </label> 
                               <span class="text-danger">*</span> <br>
-                              <input id="password" class="txt" type="password" placeholder="Nhập mật khẩu của bạn"> <br>
-                              <span " class="text-danger" id="errPassword">
+                              <input id="password" class="inp" type="password" placeholder="Nhập mật khẩu của bạn"> <br>
+                              <span  class="text-danger" id="errPassword">
                           </div>
                       </div>
                       <div class="group mt-3 mb-2 text-center">
                           <div class="fit">
-                              <label for="repassword">Nhập lại mật khẩu: </label> 
+                              <label for="repassword" class="text-white">Nhập lại mật khẩu: </label> 
                               <span class="text-danger">*</span> <br>
-                              <input id="repassword" class="txt" type="password" placeholder="Nhập lại mật khẩu của bạn"> <br>
+                              <input id="repassword" class="inp" type="password" placeholder="Nhập lại mật khẩu của bạn"> <br>
                               <span class="text-danger" id="errRepassword"></span>
                           </div>
                       </div>
@@ -611,24 +613,27 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content modal-bg">
             <div class="modal-body">
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-close btn-close-white" data-bs-dismiss="modal"></button>
+              </div>
                 <form action="">
                     <div class="tile d-flex justify-content-center mt-3 mb-3">
-                        <h1 class="text-uppercase fw-bold">đăng nhập</h1>
+                        <h1 class="text-uppercase fw-bold text-white">đăng nhập</h1>
                     </div>
                     <div class="d-flex justify-content-center mb-3">
                         <div>
-                            <label class="title" for="">Tên đăng nhập:</label>
+                            <label class="title text-white" for="">Tên đăng nhập:</label>
                             <span class="text-danger">*</span> <br>
-                            <input id="loginName" class="txt" type="text"> <br>
+                            <input id="loginName" class="inp" type="text"> <br>
                             <span id="errLogName" class="text-danger"></span>
                         </div>
                     </div>
                     
                     <div class="d-flex justify-content-center mb-3">
                         <div>
-                            <label class="title" for="">Mật khẩu:</label>
+                            <label class="title text-white" for="">Mật khẩu:</label>
                             <span class="text-danger">*</span> <br>
-                            <input id="loginPassword" class="txt" type="password"> <br>
+                            <input id="loginPassword" class="inp" type="password"> <br>
                             <span id="errLogPass" class="text-danger"></span>
                         </div>
                     </div>
@@ -641,7 +646,7 @@
                         </button>
                     </div>
                     <div class="mb-3 d-flex justify-content-center">
-                        <span class="title text-decoration-none">Hoặc đăng nhập bằng</span>
+                        <span class="title text-decoration-none text-white">Hoặc đăng nhập bằng</span>
                     </div>
                     <div class="icon_re d-flex justify-content-center">
                         <a href="" class="interact d-flex justify-content-center align-items-center">
@@ -1289,6 +1294,7 @@
   <script src="./js/phim.js"></script>
   <script src="./js/dangnhap.js"></script>
   <script src="./js/xulyform.js"></script>
+  <script src="./js/test.js"></script>
 </body>
 
 </html>

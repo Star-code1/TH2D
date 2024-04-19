@@ -435,6 +435,12 @@
   }
 }
 
+footer{
+  background-image: url(../image/line-bg\ \(1\).png);
+  background-repeat: no-repeat;
+  margin-top: 40px;
+}
+
 footer .container-footer {
   max-width: 1500px;
   margin: auto;

@@ -6,7 +6,7 @@
 
 
 .web-bg{
-  background-image: url('image/bg-body.png');
+  background-image: url(../image/bg-body.png);
   background-size: cover;
   background-position: left top;
   background-repeat: repeat-y;
@@ -52,7 +52,7 @@ pointer-events: auto;
 }
 
 .logo-home-inhome{
-  background-position: center -43px;
+  background-position: center -43px !important;
 }
 
 .logo-home:hover{
@@ -263,6 +263,8 @@ pointer-events: auto;
   box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
+
+
  .info-hover .detail{
   width: fit-content;
   margin: auto;
@@ -455,6 +457,12 @@ width: fit-content;
   .container-footer .nav-item {
     margin: auto;
   }
+}
+
+footer{
+  background-image: url(../image/line-bg\ \(1\).png);
+  background-repeat: no-repeat;
+  margin-top: 40px;
 }
 
 footer .container-footer{

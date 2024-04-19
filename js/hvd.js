@@ -35,9 +35,9 @@ function toggleAnswer(element) {
 }
 
 function submitForm() {
-  var name = document.getElementById("name").value;
-  var phone = document.getElementById("phone").value;
-  var email = document.getElementById("email").value;
+  var name = document.getElementById("name1").value;
+  var phone = document.getElementById("phone1").value;
+  var email = document.getElementById("email1").value;
   var content = document.getElementById("contents").value;
 
   var regexPhone = /^\d{10}$/; 

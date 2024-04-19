@@ -46,7 +46,7 @@
             </div>
             <div class="row mt-5 TH2D-nav mb-1">
               <div class="col-1 mt-1 p-0">
-                <a class="logo-home  m-0" href="./index.html"></a>
+                <a class="logo-home m-0" href="./index.html"></a>
               </div>
               <div
                 class="col-11 p-1 rounded-5"
@@ -64,7 +64,7 @@
                       >PHIM</a
                     >
                   </li>
-                  <li class="nav-item text-nowrap">
+                  <li class="nav-item text-nowrap" style="background-color: orange;">
                     <a href="./NewLichChieu.html" class="nav-link" style="line-height: 34px"
                       >LỊCH CHIẾU</a
                     >
@@ -103,7 +103,7 @@
               </div>
             </div>
           </div>
-
+  
           <div class="d-flex justify-content-end position-relative">
             <button id="button-login" class="navbar-toggler">
               <img
@@ -141,7 +141,7 @@
               </span>
             </button>
           </div>
-
+  
           <div
             class="offcanvas offcanvas-end bg-black d-xl-none"
             tabindex="-1"
@@ -216,76 +216,79 @@
           </div>
         </nav>
       </header>
-
+  
       <div class="modal fade modal-lg" id="register">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content modal-bg" id="noscroll">
                 <div class="modal-body">
+                  <div class="d-flex justify-content-end">
+                    <button class="btn btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                  </div>
                     <form class="form" id="register_form">
                         <div class="form-title w-100 h-auto text-center">
-                            <h2 class="fw-bold text-uppercase">đăng kí tài khoản</h2> 
+                            <h2 class="fw-bold text-uppercase text-white">đăng kí tài khoản</h2> 
                         </div>
                         <div class="group mt-3 mb-2 text-center">
                             <div class="fit">
-                                <label for="name">Họ và tên:</label> 
+                                <label  for="name" class="text-white">Họ và tên:</label> 
                                 <span class="text-danger">*</span> <br>
-                                <input id="name" class="txt" type="text" placeholder="hãy nhập họ và tên của bạn"> <br>
+                                <input id="name" class="inp" type="text" placeholder="hãy nhập họ và tên của bạn"> <br>
                                 <span class="text-danger" id="errName"></span>
                             </div>
                         </div>
                         <div class="group mt-3 mb-2 text-center">
                             <div class="fit">
-                                <label for="birthdate">Ngày sinh:</label> 
+                                <label for="birthdate" class="text-white">Ngày sinh:</label> 
                                 <span class="text-danger">*</span> <br>
-                                <input id="birthdate" class="txt" type="date"> <br>
+                                <input id="birthdate" class="inp" type="date"> <br>
                                 <span class="text-danger" id="errBirthdate"></span>
                             </div>
                         </div>
                         <div class="group mt-3 mb-2 text-center">
                             <div class="fit">
-                                <label for="phone">Số điện thoại:</label> 
+                                <label for="phone" class="text-white">Số điện thoại:</label> 
                                 <span class="text-danger">*</span> <br>
-                                <input id="phone" class="txt" type="text" placeholder="Nhập số điện thoại của bạn"> <br>
+                                <input id="phone" class="inp" type="text" placeholder="Nhập số điện thoại của bạn"> <br>
                                 <span class="text-danger" id="errPhone"></span>
                             </div>
                         </div>
                         <div class="group mt-3 mb-2 text-center">
                             <div class="fit">
-                                <label for="cc">Nhập CCCD/CMND:</label> 
+                                <label for="cc" class="text-white">Nhập CCCD/CMND:</label> 
                                 <span class="text-danger">*</span> <br>
-                                <input id="cc" class="txt" type="text" placeholder="Nhập CCCD/CMND của bạn"> <br>
+                                <input id="cc" class="inp" type="text" placeholder="Nhập CCCD/CMND của bạn"> <br>
                                 <span class="text-danger" id="errCc"></span>
                             </div>
                         </div>
                         <div class="group mt-3 mb-2 text-center">
                             <div class="fit">
-                                <label for="mail"> Nhập email:</label> 
+                                <label for="mail" class="text-white"> Nhập email:</label> 
                                 <span class="text-danger">*</span> <br>
-                                <input id="email" class="txt" type="text" placeholder="Nhập email của bạn"> <br>
+                                <input id="email" class="inp" type="text" placeholder="Nhập email của bạn"> <br>
                                 <span class="text-danger" id="errMail"></span> 
                             </div>
                         </div>
                         <div class="group mt-3 mb-2 text-center">
                             <div class="fit">
-                                <label for="username">Tên đăng nhập:</label> 
+                                <label for="username" class="text-white">Tên đăng nhập:</label> 
                                 <span class="text-danger">*</span> <br>
-                                <input id="username" class="txt" type="text" placeholder="Nhập Tên đăng nhập mà bạn muốn"> <br>
+                                <input id="username" class="inp" type="text" placeholder="Nhập Tên đăng nhập mà bạn muốn"> <br>
                                 <span class="text-danger" id="errUsername"></span> 
                             </div>
                         </div>
                         <div class="group mt-3 mb-2 text-center">
                             <div class="fit">
-                                <label for="password">Nhập mật khẩu: </label> 
+                                <label for="password" class="text-white">Nhập mật khẩu: </label> 
                                 <span class="text-danger">*</span> <br>
-                                <input id="password" class="txt" type="password" placeholder="Nhập mật khẩu của bạn"> <br>
-                                <span " class="text-danger" id="errPassword">
+                                <input id="password" class="inp" type="password" placeholder="Nhập mật khẩu của bạn"> <br>
+                                <span  class="text-danger" id="errPassword">
                             </div>
                         </div>
                         <div class="group mt-3 mb-2 text-center">
                             <div class="fit">
-                                <label for="repassword">Nhập lại mật khẩu: </label> 
+                                <label for="repassword" class="text-white">Nhập lại mật khẩu: </label> 
                                 <span class="text-danger">*</span> <br>
-                                <input id="repassword" class="txt" type="password" placeholder="Nhập lại mật khẩu của bạn"> <br>
+                                <input id="repassword" class="inp" type="password" placeholder="Nhập lại mật khẩu của bạn"> <br>
                                 <span class="text-danger" id="errRepassword"></span>
                             </div>
                         </div>
@@ -295,13 +298,13 @@
                                     Chính sách bảo mật
                                 </a>
                             </div>
-
+  
                             <div class="d-flex justify-content-center">
                                 <div class="collapse" id="chinhsach">
                                     <div class="card card-body custom-card">
                                         <p class="text-dark">1. TỔNG QUAN VỀ CHÍNH SÁCH BẢO MẬT
-
-
+  
+  
                                             CINESTAR hiểu rằng Khách Hàng quan tâm đến việc dữ liệu cá nhân của Khách Hàng sẽ được sử dụng và chia sẻ như thế nào. CINESTAR rất coi trọng sự tin tưởng của Khách Hàng, vì vậy CINESTAR sẽ sử dụng những dữ liệu mà Khách Hàng cung cấp một cách cẩn thận và hợp lý, phù hợp với quy định của pháp luật.
                                             
                                             
@@ -609,24 +612,27 @@
       <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content modal-bg">
               <div class="modal-body">
+                <div class="d-flex justify-content-end">
+                  <button class="btn btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
                   <form action="">
                       <div class="tile d-flex justify-content-center mt-3 mb-3">
-                          <h1 class="text-uppercase fw-bold">đăng nhập</h1>
+                          <h1 class="text-uppercase fw-bold text-white">đăng nhập</h1>
                       </div>
                       <div class="d-flex justify-content-center mb-3">
                           <div>
-                              <label class="title" for="">Tên đăng nhập:</label>
+                              <label class="title text-white" for="">Tên đăng nhập:</label>
                               <span class="text-danger">*</span> <br>
-                              <input id="loginName" class="txt" type="text"> <br>
+                              <input id="loginName" class="inp" type="text"> <br>
                               <span id="errLogName" class="text-danger"></span>
                           </div>
                       </div>
                       
                       <div class="d-flex justify-content-center mb-3">
                           <div>
-                              <label class="title" for="">Mật khẩu:</label>
+                              <label class="title text-white" for="">Mật khẩu:</label>
                               <span class="text-danger">*</span> <br>
-                              <input id="loginPassword" class="txt" type="password"> <br>
+                              <input id="loginPassword" class="inp" type="password"> <br>
                               <span id="errLogPass" class="text-danger"></span>
                           </div>
                       </div>
@@ -639,7 +645,7 @@
                           </button>
                       </div>
                       <div class="mb-3 d-flex justify-content-center">
-                          <span class="title text-decoration-none">Hoặc đăng nhập bằng</span>
+                          <span class="title text-decoration-none text-white">Hoặc đăng nhập bằng</span>
                       </div>
                       <div class="icon_re d-flex justify-content-center">
                           <a href="" class="interact d-flex justify-content-center align-items-center">
@@ -702,7 +708,7 @@
                 <!-- film 1 -->
                 <div class="row">
                   <div class="film col">
-                    <a href="">
+                    <a href="./TrenBanNhauDuoiBanMuu.html">
                       <div class="film-picture">
                         <img
                           src="./image/tren-ban-nhau-duoi-ban-muu-poster.jpg"
@@ -764,7 +770,7 @@
                     class="film col"
                     style="background-color: rgb(95, 20, 68)"
                   >
-                    <a href="">
+                    <a href="./NguoiVoCuoiCung.html">
                       <div class="film-picture">
                         <img
                           src="./image/poster-nguoi-vo-cuoi-cung.jpg"
@@ -833,7 +839,7 @@
                     class="film col"
                     style="background-color: rgb(145, 30, 103)"
                   >
-                    <a href="">
+                    <a href="./QuyCau.html">
                       <div class="film-picture">
                         <img src="./image/poster-quy-cau2.jpg" alt="" />
                       </div>
@@ -890,7 +896,7 @@
                 <!-- film 4 -->
                 <div class="row">
                   <div class="film col" style="background-color: #c0346c">
-                    <a href="">
+                    <a href="./QuyAnTang.html">
                       <div class="film-picture">
                         <img src="./image/teeyod1.jpg" alt="" />
                       </div>
@@ -955,7 +961,7 @@
                 <!-- film 5 -->
                 <div class="row">
                   <div class="film col">
-                    <a href="">
+                    <a href="./Alienoid2.html">
                       <div class="film-picture">
                         <img src="./image/da-chieu-hon-chien.jpg" alt="" />
                       </div>
@@ -1029,7 +1035,7 @@
                     class="film col"
                     style="background-color: rgb(95, 20, 68)"
                   >
-                    <a href="">
+                    <a href="./MatVuOng.html">
                       <div class="film-picture">
                         <img src="./image/mat-vu-ong.jpg" alt="" />
                       </div>
@@ -1100,7 +1106,7 @@
                     class="film col"
                     style="background-color: rgb(145, 30, 103)"
                   >
-                    <a href="">
+                    <a href="./RuouCotNguoi.html">
                       <div class="film-picture">
                         <img src="./image/ruou-cot-nguoi-poster.jpg" alt="" />
                       </div>
@@ -1162,7 +1168,7 @@
                 <!-- film 4 -->
                 <div class="row">
                   <div class="film col" style="background-color: #c0346c">
-                    <a href="">
+                    <a href="./BienChet.html">
                       <div class="film-picture">
                         <img src="./image/noryang-poster.jpg" alt="" />
                       </div>
@@ -1232,7 +1238,7 @@
                     <img class="logo-2d" src="./image/icon-2d.png" alt="">
                   </div>
                   <div class="info-hover d-none d-md-block bg-black bg-opacity-75 position-absolute hidden">
-                    <a class="nav-link text-white" href="">
+                    <a class="nav-link text-white" href="./QuyCau.html">
                       <p class="info-detail text-center ms-2">
                         Sau cái chết kỳ lạ của ông chủ lò mổ chó danh tiếng, những hiện tượng ma quái trong nhà liên tục
                         xuất hiện. Nam_con trai của ông bắt đầu tìm hiểu và nhận ra mọi thứ có liên quan đến con chó
@@ -1266,7 +1272,7 @@
                     <img src="./image/icon-2d.png" alt="" class="logo-2d">
                   </div>
                   <div class="info-hover d-none d-md-block bg-black bg-opacity-75 position-absolute hidden">
-                    <a class="nav-link text-white" href="">
+                    <a class="nav-link text-white" href="./QuyAnTang.html">
                       <p class="info-detail text-center ms-2">
                         Vào năm 1972, một sự việc kinh hoàng nhất đã xảy ra. Một cô gái trẻ ở một ngôi làng hẻo lánh ở
                         tỉnh Kanchanaburi đã qua đời một cách bí ẩn. Khi nghe thấy một giọng nói dựng tóc gáy "Tee
@@ -1307,7 +1313,7 @@
                     <img class="logo-2d" src="./image/icon-2d.png" alt="">
                   </div>
                   <div class="info-hover d-none d-md-block bg-black bg-opacity-75 position-absolute hidden">
-                    <a class="nav-link text-white" href="">
+                    <a class="nav-link text-white" href="./Alienoid2.html">
                       <p class="info-detail text-center ms-2">
                         Ean (KIM Tae-ri) bị mắc kẹt ở quá khứ trong khi cố ngăn chặn sự trốn thoát của những tù nhân
                         ngoài
@@ -1348,7 +1354,7 @@
                     <img src="./image/icon-2d.png" alt="" class="logo-2d">
                   </div>
                   <div class="info-hover d-none d-md-block bg-black bg-opacity-75 position-absolute hidden">
-                    <a class="nav-link text-white" href="">
+                    <a class="nav-link text-white" href="./MatVuOng.html">
                       <p class="info-detail text-center ms-2">
                         Jason Statham vào vai Adam Clay, một người nuôi ong cần mẫn và đơn độc. Anh có mối quan hệ tốt
                         với
@@ -1383,7 +1389,7 @@
                     <img src="./image/icon-2d.png" alt="" class="logo-2d">
                   </div>
                   <div class="info-hover d-none d-md-block bg-black bg-opacity-75 position-absolute hidden">
-                    <a class="nav-link text-white" href="">
+                    <a class="nav-link text-white" href="./RuouCotNguoi.html">
                       <p class="info-detail text-center ms-2">
                         Nhân vật chính trong Rượu Cốt Người là Trương Tử Kiệt (Lư Hãn Đình), một chàng trai quyết định
                         tham gia tour du lịch trên đảo hoang cùng bạn bè để quên đi nỗi đau trước cái chết đột ngột của
@@ -1418,7 +1424,7 @@
                     <img src="./image/icon-2d.png" alt="" class="logo-2d">
                   </div>
                   <div class="info-hover d-none d-md-block bg-black bg-opacity-75 position-absolute hidden">
-                    <a class="nav-link text-white" href="">
+                    <a class="nav-link text-white" href="./BienChet.html">
                       <p class="info-detail text-center ms-2">
                         Trận đại hải chiến cuối cùng để chấm dứt cuộc chiến tranh 7 năm Nhật Bản - Triều Tiên, hạm đội
                         liên minh của Đô Đốc Yin Sun-shin và quân đội nhà Minh cùng chống lại kẻ thù đông gần gấp 3 lần
@@ -1447,7 +1453,7 @@
                     <img src="./image/icon-2d.png" alt="" class="logo-2d">
                   </div>
                   <div class="info-hover d-none d-md-block bg-black bg-opacity-75 position-absolute hidden">
-                    <a class="nav-link text-white" href="">
+                    <a class="nav-link text-white" href="./TokyoMer.html">
                       <p class="info-detail text-center ms-2">
                         Một cuộc xung đột nở ra khi một sự kiện chưa từng có xảy ra ở Yokohama sau khi một quả bom phát
                         nổ
@@ -1479,7 +1485,7 @@
                     <img src="./image/icon-2d.png" alt="" class="logo-2d">
                   </div>
                   <div class="info-hover d-none d-md-block bg-black bg-opacity-75 position-absolute hidden">
-                    <a class="nav-link text-white" href="">
+                    <a class="nav-link text-white" href="./Digimon.html">
                       <p class="info-detail text-center ms-2">
                         Tựa phim mà tuổi thơ 8x, 9x đời đầu với tên gọi Cuộc Phiêu Lưu Của Các Con Thú sẽ trở lại trên
                         màn
@@ -1517,7 +1523,7 @@
                     <img src="./image/icon-2d.png" alt="" class="logo-2d">
                   </div>
                   <div class="info-hover d-none d-md-block bg-black bg-opacity-75 position-absolute hidden">
-                    <a class="nav-link text-white" href="">
+                    <a class="nav-link text-white" href="./VongVayCaMap.html">
                       <p class="info-detail text-center ms-2">
                         No Way Up" xoay quanh các nhân vật có xuất thân rất khác nhau gặp nhau khi chiếc máy bay họ đang
                         di chuyển đâm xuống Thái Bình Dương. Chiếc máy bay gặp sự cố phải dừng lại một cách nguy hiểm
@@ -1549,7 +1555,7 @@
                     <img src="./image/icon-2d.png" alt="" class="logo-2d">
                   </div>
                   <div class="info-hover d-none d-md-block bg-black bg-opacity-75 position-absolute hidden">
-                    <a class="nav-link text-white" href="">
+                    <a class="nav-link text-white" href="./TronTimVoiQuy.html">
                       <p class="info-detail text-center ms-2">
                         Trốn Tìm Với Quỷ hé lộ câu chuyện rùng rợn xoay quanh một nhóm thanh thiếu niên tình cờ nhặt một
                         con dao bị nguyền rủa với dòng chữ điêu khắc “I will play, i won’t quit” (tạm dịch: Tôi sẽ chơi,
@@ -1582,7 +1588,7 @@
                     <img src="./image/icon-2d.png" alt="" class="logo-2d">
                   </div>
                   <div class="info-hover d-none d-md-block bg-black bg-opacity-75 position-absolute hidden">
-                    <a class="nav-link text-white" href="">
+                    <a class="nav-link text-white" href="./TruQuy.html">
                       <p class="info-detail text-center ms-2">
                         Lần đầu tiên truyền thuyết đô thị Nhật Bản về nữ quỷ Hasshaku-sama chuyên bắt cóc trẻ em từng
                         làm
@@ -1611,7 +1617,7 @@
                     <img src="./image/icon-2d.png" alt="" class="logo-2d">
                   </div>
                   <div class="info-hover d-none d-md-block bg-black bg-opacity-75 position-absolute hidden">
-                    <a class="nav-link text-white" href="">
+                    <a class="nav-link text-white" href="./Katak.html">
                       <p class="info-detail text-center ms-2">
                         Trong khi các bạn đồng trang lứa đều đã chuyển sang màu trắng thì chú cá voi Katak vẫn còn nhỏ
                         bé
@@ -1643,7 +1649,7 @@
                     <img src="./image/icon-2d.png" alt="" class="logo-2d">
                   </div>
                   <div class="info-hover d-none d-md-block bg-black bg-opacity-75 position-absolute hidden">
-                    <a class="nav-link text-white" href="">
+                    <a class="nav-link text-white" href="./GapLaiChiBau.html">
                       <p class="info-detail text-center ms-2">
                         Gặp Lại Chị Bầu" xoay quanh Phúc, một thanh viên trẻ với đam mê diễn xuất nhưng phải trải qua
                         cuộc
@@ -1880,7 +1886,7 @@
       <footer>
         <img
           style="width: 100%; margin-top: 50px"
-          src="./image/line-bg.png"
+          src="./image/line-bg (1).png"
           alt=""
         />
         <div class="container-footer">
