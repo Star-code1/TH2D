@@ -351,7 +351,7 @@ pointer-events: auto;
 .modal-bg{
   background-color: #34374C;
 }
-.modal{
+#login.modal{
   color: white;
 }
 .register-button {

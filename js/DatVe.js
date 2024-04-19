@@ -8,18 +8,18 @@ $(document).ready(function () {
     var tenGhe = $(this).attr("data-soGhe");
     var giaGhe = parseInt($(this).attr("data-giaTien"));
     let nowSRC = $(this).attr("src");
-    if (nowSRC == "../image/GheDonChuaChon.svg") {
-      let newSRC = "../image/GheDonDangChon.svg";
+    if (nowSRC == "./image/GheDonChuaChon.svg") {
+      let newSRC = "./image/GheDonDangChon.svg";
       $(this).attr("src", newSRC);
       listTenGhe.push(tenGhe);
       GiaGhe = GiaGhe + giaGhe;
-    } else if (nowSRC == "../image/GheDonDangChon.svg") {
-      let newSRC = "../image/GheDonChuaChon.svg";
+    } else if (nowSRC == "./image/GheDonDangChon.svg") {
+      let newSRC = "./image/GheDonChuaChon.svg";
       let viTri = listTenGhe.indexOf(tenGhe);
       $(this).attr("src", newSRC);
       listTenGhe.splice(viTri, 1);
       GiaGhe = GiaGhe - giaGhe;
-    } else if (nowSRC == "../image/GheDonDaChon.svg") {
+    } else if (nowSRC == "./image/GheDonDaChon.svg") {
       return;
     }
     cacGheChon.html("Ghế :" + listTenGhe.join(", "));
@@ -33,21 +33,21 @@ $(document).ready(function () {
     var tenGhe = $(this).attr("data-soGhe");
     var giaGhe = parseInt($(this).attr("data-giaTien"));
     let nowSRC = $(this).attr("src");
-    if (nowSRC == "../image/GheDoiChuaChon.svg") {
-      let newSRC = "../image/GheDoiDangChon.svg";
+    if (nowSRC == "./image/GheDoiChuaChon.svg") {
+      let newSRC = "./image/GheDoiDangChon.svg";
       $(this).attr("src", newSRC);
       listTenGhe.push(tenGhe);
       GiaGhe = GiaGhe + giaGhe;
     }
-    if (nowSRC == "../image/GheDoiDangChon.svg") {
-      let newSRC = "../image/GheDoiChuaChon.svg";
+    if (nowSRC == "./image/GheDoiDangChon.svg") {
+      let newSRC = "./image/GheDoiChuaChon.svg";
       let viTri = listTenGhe.indexOf(tenGhe);
       $(this).attr("src", newSRC);
       $(this).attr("src", newSRC);
       listTenGhe.splice(viTri, 1);
       GiaGhe = GiaGhe - giaGhe;
     }
-    if (nowSRC == "../image/GheDoiDaChon.svg") {
+    if (nowSRC == "./image/GheDoiDaChon.svg") {
       return;
     }
     cacGheChon.html("Ghế :" + listTenGhe.join(", "));
